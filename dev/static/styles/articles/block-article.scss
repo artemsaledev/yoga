@@ -1,0 +1,21 @@
+.article {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  text-align: center;
+}
+.group-article-text {
+  display: flex;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.article img {
+  max-width: 60%;
+  float: left;
+}
+.text-offer-article {
+   margin: 35px 0;
+}
+.text-about-article {
+  margin: 0 15px;
+}

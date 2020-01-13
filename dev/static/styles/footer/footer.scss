@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+  z-index: 99;
+  font-size: 14px;
+  background: $main-bg-color;
+}
+
+.footer-social__link {
+  width: 30px;
+  height: 30px;
+  padding: 0 4px;
+}

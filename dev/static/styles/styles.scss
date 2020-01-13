@@ -1,0 +1,78 @@
+@import "utils/vars";
+@import "utils/libs";
+@import "utils/fonts";
+@import "utils/media";
+
+
+html {
+  font-size: $base-font-size;
+}
+
+body { 
+  background-color: $main-bg-color;
+  font-family: $main-font;
+  color: $base-text-color; 
+  overflow: hidden!important;
+  margin: 0; 
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a { 
+  text-decoration: none; 
+  color: $base-text-color;
+}
+
+p { margin: 0; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea { vertical-align: middle; }
+
+svg {
+  max-width: 100%;
+}
+
+textarea { resize: none; }
+
+section { 
+  padding: 40px 0;
+  position: relative; 
+}
+
+input,
+select,
+button { outline: none; }
+
+button {
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+button:focus {
+  outline: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+///////////////////////////////////////////

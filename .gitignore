@@ -1,0 +1,5 @@
+build
+node_modules
+dev/static/images
+dev/static/fonts
+.idea
