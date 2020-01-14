@@ -3,7 +3,219 @@ extends template/main
 block variables
 	- var title = 'Yoga best practice'
 
-block content
+block banner-form
+	form(action="form.php").form-trial
+		.group-input-block
+			input(type="text" name="name" placeholder="Enter your name" required)
+			input(type="phone" name="phone" placeholder="Enter your phone" required)
+			input(type="text" name="class" placeholder="Choose your class" required).choose-trial-class
+			ul.choose-trial-class__list
+				li.class-yoga-for Yoga for health
+				li.class-yoga-for Yoga for lose weight
+				li.class-yoga-for Yoga for elderly
+				li.class-yoga-for Yoga for children
+			input(name="sub" type="submit" value="Try it").form_sub
 	.offer-text_catalog
-		h1.head-offer Lorem ipsum
-		p.official-head Lorem ipsum dolor sit amet
+		h1.head-offer Just Balance your Mind & Body 
+		p.official-head Create the healthy living for yourself
+
+block our-classes
+	section.our-classes
+		h2.head YOGA FEATURE PROGRAM
+		p.official-head Our Classes
+		.group-class__list
+			.class-for
+				a(href="#").class-description-img
+					img(src="static/images/our-classes/yoga-for-health.png" alt="Yoga for health")
+				p.class-description
+					span.class-description__head Yoga For Health
+					span.class-description__text Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+					span.class-description__yoga-type Ashtanga - Hatha
+			.class-for
+				a(href="#").class-description-img
+					img(src="static/images/our-classes/yoga-for-lose-weight.png" alt="Yoga for lose weight")
+				p.class-description
+					span.class-description__head Yoga for lose weight
+					span.class-description__text Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+					span.class-description__yoga-type Ashtanga - Hatha
+			.class-for
+				a(href="#").class-description-img
+					img(src="static/images/our-classes/yoga-for-children.png" alt="Yoga for children")
+				p.class-description
+					span.class-description__head Yoga for children
+					span.class-description__text Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+					span.class-description__yoga-type Ashtanga - Hatha
+			.class-for
+				a(href="#").class-description-img
+					img(src="static/images/our-classes/yoga-for-elderly.png" alt="Yoga for elderly")
+				p.class-description
+					span.class-description__head Yoga for elderly
+					span.class-description__text Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+					span.class-description__yoga-type Ashtanga - Hatha
+
+block gallery
+	section.gallery
+		.gallery__photo
+			a(href="#").photo-galleries-img
+				picture
+					source(srcset="static/images/gallery/slide-1.png" media="(max-width: 1023px)")
+					img(src="static/images/gallery/slide-1.png" alt="slide-1")
+			button.zoom-photo
+				img(src="static/images/loop-search.png" alt="see more")
+		.gallery__photo
+			a(href="#").photo-galleries-img
+				picture
+					source(srcset="static/images/gallery/slide-2.png" media="(max-width: 1023px)")
+					img(src="static/images/gallery/slide-2.png" alt="slide-2")
+			button.zoom-photo
+				img(src="static/images/loop-search.png" alt="see more")
+		.gallery__photo
+			a(href="#").photo-galleries-img
+				picture
+					source(srcset="static/images/gallery/slide-3.png" media="(max-width: 1023px)")
+					img(src="static/images/gallery/slide-3.png" alt="slide-3")
+			button.zoom-photo
+				img(src="static/images/loop-search.png" alt="see more")
+		.gallery__photo
+			a(href="#").photo-galleries-img
+				picture
+					source(srcset="static/images/gallery/slide-4.png" media="(max-width: 1023px)")
+					img(src="static/images/gallery/slide-4.png" alt="slide-4")
+			button.zoom-photo
+				img(src="static/images/loop-search.png" alt="see more")
+		.gallery__photo
+			a(href="#").photo-galleries-img
+				picture
+					source(srcset="static/images/gallery/slide-5.png" media="(max-width: 1023px)")
+					img(src="static/images/gallery/slide-5.png" alt="slide-5")
+			button.zoom-photo
+				img(src="static/images/loop-search.png" alt="see more")
+		.gallery__photo
+			a(href="#").photo-galleries-img
+				picture
+					source(srcset="static/images/gallery/slide-6.png" media="(max-width: 1023px)")
+					img(src="static/images/gallery/slide-6.png" alt="slide-6")
+			button.zoom-photo
+				img(src="static/images/loop-search.png" alt="see more")
+		.gallery__photo
+			a(href="#").photo-galleries-img
+				picture
+					source(srcset="static/images/gallery/slide-7.png" media="(max-width: 1023px)")
+					img(src="static/images/gallery/slide-7.png" alt="slide-7")
+			button.zoom-photo
+				img(src="static/images/loop-search.png" alt="see more")
+		.gallery__photo
+			a(href="#").photo-galleries-img
+				picture
+					source(srcset="static/images/gallery/slide-8.png" media="(max-width: 1023px)")
+					img(src="static/images/gallery/slide-8.png" alt="slide-8")
+			button.zoom-photo
+				img(src="static/images/loop-search.png" alt="see more")
+
+
+block about-us
+	section.about-us
+		.about-us__description
+			h2.head About us
+			p.official-head Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.
+		.about-us__slider
+			.popular-categories
+				.categories-prev
+					.categories-prev__btn.categories-prev__btn--prev
+					.categories-prev__btn.categories-prev__btn--next
+					.js-categories-prev
+						.category-prev
+							.category-prev__img(style="background-image:url('static/images/about-us/about-us.png')")
+
+block benefit
+	section.benefit
+		p.benefit-description
+			img(src="static/images/features/improved-overall-health.png" alt="improved-overall-health")
+			span.benefit-description__head IMPROVED OVERALL HEALTH
+			span.benefit-description__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+		p.benefit-description
+			img(src="static/images/features/increased-concentration.png" alt="increased-concentration")
+			span.benefit-description__head INCREASED CONCENTRATION
+			span.benefit-description__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+		p.benefit-description
+			img(src="static/images/features/blance-your-mind.png" alt="blance-your-mind")
+			span.benefit-description__head BLANCE YOUR MIND
+			span.benefit-description__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+		p.benefit-description
+			img(src="static/images/features/sleep-better.png" alt="sleep-better")
+			span.benefit-description__head SLEEP BETTER
+			span.benefit-description__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+		p.benefit-description
+			img(src="static/images/features/weight-loss.png" alt="weight-loss")
+			span.benefit-description__head WEIGHT LOSS
+			span.benefit-description__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+		p.benefit-description
+			img(src="static/images/features/strengthens-your-bones.png" alt="strengthens-your-bones")
+			span.benefit-description__head STRENGTHENS YOUR BONES
+			span.benefit-description__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+		p.benefit-description
+			img(src="static/images/features/increased-flexibility.png" alt="increased-flexibility")
+			span.benefit-description__head INCREASED FLEXIBILITY
+			span.benefit-description__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+		p.benefit-description
+			img(src="static/images/features/lower-blood-pressure.png" alt="lower-blood-pressure")
+			span.benefit-description__head LOWER BLOOD PRESSURE
+			span.benefit-description__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+
+
+block prices-testimonials
+	section.prices-testimonials
+		.subscription-plan
+			.subscription-rate
+				p.subscription-rates__price
+					span $
+					span 49
+					span / month
+				p.subscription-rates__time
+					span ENTRY DATE: MON – FRI
+					hr.subscription-rate--line
+					span ENTRY TIME: 8A.M – 8P.M
+					hr.subscription-rate--line
+					span NUTRITION ADVICER: NO
+					button.subscription-btn Buy now
+			.subscription-rate
+				p.subscription-rates__price
+					span $
+					span 69
+					span / month
+				p.subscription-rates__time
+					span ENTRY DATE: MON – FRI
+					hr.subscription-rate--line
+					span ENTRY TIME: 8A.M – 8P.M
+					hr.subscription-rate--line
+					span NUTRITION ADVICER: YES
+					button.subscription-btn Buy now
+			.subscription-rate
+				p.subscription-rates__price
+					span $
+					span 99
+					span / month
+				p.subscription-rates__time
+					span ENTRY DATE: MON – SUN
+					hr.subscription-rate--line
+					span ENTRY TIME: 8A.M – 8P.M
+					hr.subscription-rate--line
+					span NUTRITION ADVICER: YES
+					button.subscription-btn Buy now
+		.testimonials-slider
+			.trainer-recommendation.js-categories-prev
+				.trainer-photo.trainer-photo--big
+					img(src="static/images/testimonials/laura-shepar-trainer.png" alt="Laura Shepar trainer photo")
+				.trainer-advice
+					hr.trainer-advice--line
+					p.trainer-advice__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+					.trainer-advice__position Trainer
+					.trainer-advice__name Laura Shepard
+					.next-advice
+						.advice-prev__btn.advice-prev__btn--prev
+						.trainer-photo
+							img(src="static/images/testimonials/laura-shepar-trainer.png" alt="Laura Shepar trainer photo")
+						.trainer-preview
+							.trainer-preview__name Sara Taylor
+							.trainer-preview__position Trainer
+						.advice-prev__btn.advice-prev__btn--next

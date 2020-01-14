@@ -2,17 +2,18 @@
   display: flex;
   overflow: hidden;
   flex: 1 0 100%;
+  margin-top: 90px;
 }
 
 .offer-text_image {
-  float: left;
+  // float: left;
   max-width: 100%;
 }
 
 .offer-image {max-width: 100%;}
 
 .offer-text_catalog {
-  float: right;
+  // float: right;
   text-align: right;
 }
 
