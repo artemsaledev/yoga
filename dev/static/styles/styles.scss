@@ -12,7 +12,7 @@ body {
   background-color: $main-bg-color;
   font-family: $main-font;
   color: $base-text-color; 
-  overflow: hidden!important;
+  overflow: scroll!important;
   margin: 0; 
   display: flex;
   flex: 1 0 100%;
@@ -48,9 +48,9 @@ svg {
 
 textarea { resize: none; }
 
-section { 
-  padding: 40px 0;
-  position: relative; 
+section {
+  position: relative;
+  width: 100%; 
 }
 
 input,

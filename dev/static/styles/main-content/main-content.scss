@@ -1,8 +1,9 @@
-.main-content {
+.content-wrapper {
   display: flex;
-  overflow: hidden;
+  flex-wrap: wrap;
   flex: 1 0 100%;
-  margin-top: 90px;
+  margin-top: 100px;
+  overflow: hidden;
 }
 
 .offer-text_image {

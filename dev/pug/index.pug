@@ -4,20 +4,21 @@ block variables
 	- var title = 'Yoga best practice'
 
 block banner-form
-	form(action="form.php").form-trial
-		.group-input-block
-			input(type="text" name="name" placeholder="Enter your name" required)
-			input(type="phone" name="phone" placeholder="Enter your phone" required)
-			input(type="text" name="class" placeholder="Choose your class" required).choose-trial-class
-			ul.choose-trial-class__list
-				li.class-yoga-for Yoga for health
-				li.class-yoga-for Yoga for lose weight
-				li.class-yoga-for Yoga for elderly
-				li.class-yoga-for Yoga for children
-			input(name="sub" type="submit" value="Try it").form_sub
-	.offer-text_catalog
-		h1.head-offer Just Balance your Mind & Body 
-		p.official-head Create the healthy living for yourself
+	section.banner-form
+		form(action="form.php").form-trial
+			.group-input-block
+				input(type="text" name="name" placeholder="Enter your name" required)
+				input(type="phone" name="phone" placeholder="Enter your phone" required)
+				input(type="text" name="class" placeholder="Choose your class" required).choose-trial-class
+				ul.choose-trial-class__list
+					li.class-yoga-for Yoga for health
+					li.class-yoga-for Yoga for lose weight
+					li.class-yoga-for Yoga for elderly
+					li.class-yoga-for Yoga for children
+				input(name="sub" type="submit" value="Try it").form_sub
+		.offer-text_catalog
+			h1.head-offer Just Balance your Mind & Body 
+			p.official-head Create the healthy living for yourself
 
 block our-classes
 	section.our-classes

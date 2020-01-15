@@ -1,5 +1,31 @@
-@media screen and (min-device-width: 980px) {
+@media screen and (max-device-width: 1300px) {
 	.main-header { 
 	justify-content: space-between;
   }
+  .nav-list {
+  	padding-top: 16px;
+  }
+  .nav-list__item {
+  	padding-bottom: 6px;
+  }
+  .nav-list__item--logo {
+  	margin: 0 auto;
+    position: absolute;
+    left: 30px;
+    top: 16px;
+  }
+}
+
+@media screen and (max-device-width: 769px) {
+	.nav-trigger {
+		display: flex;
+	}
+	.nav-list__item {
+		display: none;
+	    margin: 0px;
+	}
+	.main-nav-active .nav-list__item--logo {
+		position: static;
+	    order: 1;
+	}
 }
