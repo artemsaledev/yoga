@@ -7,6 +7,7 @@ block banner-form
 	section.banner-form
 		form(action="form.php").form-trial
 			.group-input-block
+				span.form-trial__head Trial Class
 				input(type="text" name="name" placeholder="Enter your name" required)
 				input(type="phone" name="phone" placeholder="Enter your phone" required)
 				input(type="text" name="class" placeholder="Choose your class" required).choose-trial-class
@@ -15,9 +16,13 @@ block banner-form
 					li.class-yoga-for Yoga for lose weight
 					li.class-yoga-for Yoga for elderly
 					li.class-yoga-for Yoga for children
-				input(name="sub" type="submit" value="Try it").form_sub
+				input(name="sub" type="submit" value="Try it").form_sub-btn
 		.offer-text_catalog
-			h1.head-offer Just Balance your Mind & Body 
+			h1.head-offer 
+				span J
+				| ust Balance 
+				br
+				| your Mind & Body 
 			p.official-head Create the healthy living for yourself
 
 block our-classes

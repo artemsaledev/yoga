@@ -1,6 +1,8 @@
 @font-face {
 	font-family: 'Champagne';
 	src: url('../fonts/champagne/ChampagneLimousinesBold.ttf') format('ttf');
+	src: url('../fonts/champagne/champagnelimousinesbold.woff') format('woff');
+	src: url('../fonts/champagne/champagnelimousinesbold.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -13,24 +15,32 @@
 @font-face {
 	font-family: 'OpenSansBold';
 	src: url('../fonts/open-sans/OpenSansBold.ttf') format('ttf');
+	src: url('../fonts/open-sans/opensansbold.woff') format('woff');
+	src: url('../fonts/open-sans/opensansbold.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'OpenSansItalic';
 	src: url('../fonts/open-sans/OpenSansItalic.ttf') format('ttf');
+	src: url('../fonts/open-sans/opensansitalic.woff') format('woff');
+	src: url('../fonts/open-sans/opensansitalic.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'OpenSansSemiBold';
 	src: url('../fonts/open-sans/OpenSansSemiBold.ttf') format('ttf');
+	src: url('../fonts/open-sans/opensanssemibold.woff') format('woff');
+	src: url('../fonts/open-sans/opensanssemibold.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'OpenSansRegular';
 	src: url('../fonts/open-sans/OpenSansRegular.ttf') format('ttf');
+	src: url('../fonts/open-sans/opensansregular.woff') format('woff');
+	src: url('../fonts/open-sans/opensansregular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
