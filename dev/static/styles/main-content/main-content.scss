@@ -6,6 +6,11 @@
   overflow: hidden;
 }
 
+.our-classes, .about-us, .benefit, .prices-testimonials, .footer-wrapper {
+  margin: 0 10%;
+  padding: 100px 11%;
+} 
+
 .banner-form {
   padding: 7.1429rem 2.1429rem;
   background: url(../images/bg-slider.jpg) center repeat;
@@ -27,12 +32,12 @@
 
 input:hover, input:active, input:focus {color:#000;}
 
-::-webkit-input-placeholder { color: #c0c0c1; }
-::-moz-placeholder          { color: #c0c0c1; } /* Firefox 19+ */
-:-moz-placeholder           { color: #c0c0c1; } /* Firefox 18- */
-:-ms-input-placeholder      { color: #c0c0c1; }
+::-webkit-input-placeholder { color: $form-text-color; }
+::-moz-placeholder          { color: $form-text-color; } /* Firefox 19+ */
+:-moz-placeholder           { color: $form-text-color; } /* Firefox 18- */
+:-ms-input-placeholder      { color: $form-text-color; }
 
-.form-trial, .offer-text_catalog {
+.form-trial, .offer-text__catalog {
   display: flex;
   flex: 1;
   z-index: 2;
@@ -50,7 +55,6 @@ input:hover, input:active, input:focus {color:#000;}
   margin-bottom: 31px;
 }
 
-
 .choose-trial-class__list {
   display: none;
 }
@@ -62,7 +66,7 @@ input:hover, input:active, input:focus {color:#000;}
   display: flex;
   flex-direction: column;
   flex: 0 0 300px;
-  margin-right: 10px;
+  margin-right: 43px;
   padding: 30px 40px 40px 35px;
   input {
     background: $form-bg-input-color;
@@ -106,7 +110,7 @@ input.form_sub-btn {
   }
 }
 
-.offer-text_catalog {
+.offer-text__catalog {
   color: $text-white-color;
   display: flex;
   flex-direction: column;
@@ -114,17 +118,18 @@ input.form_sub-btn {
   padding: 5.3571rem 0;
 }
 
-.head-offer, .official-head {
-  margin-left: 78px;
+.head-offer, .call-head {
+  margin-left: 49px;
 }
 
 .head-offer {
   font-size: 3.4286rem;
-  margin-bottom: 50px;
   letter-spacing: 0.025em;
+  line-height: 5.1429rem;
+  margin-bottom: 50px;
+  max-width: 505px;
   position: relative;
   text-transform: uppercase;
-  line-height: 5.1429rem;
   span {
     font-size: 4rem;
     position: relative;
@@ -132,10 +137,77 @@ input.form_sub-btn {
   }
 }
 
-.official-head {
+.call-head {
   color: $text-white-color;
   font-size: 2.8571rem;
   font-family: $offer-font;
   font-style: italic;
+  max-width: 395px;
 }
 
+///////////////////////section.our-classes///////////////
+
+.our-classes {
+  align-items: center;
+  flex-direction: column;
+}
+
+.head {
+  color: $main-head-color;
+  font-family: $bold-font;
+  font-size: 2.1429rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-overhead {
+  font-family: $offer-font;
+  font-style: italic;
+  font-size: 2.8571rem;
+  margin: 20px 0 72px;
+  text-align: center;
+}
+
+.group-class {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px -14px -25px;
+}
+
+.class-for {
+  display: flex;
+  flex: 0 1 570px;
+  padding: 0px 15px 25px;
+}
+
+.class-for--shadow-wrapper {
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;  
+}
+
+.class-description {
+  flex: 1 1 223px;
+  padding: 50px 47px 50px 30px;
+  span {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.class-description-img {
+  overflow: hidden;
+}
+
+.class-description__head {
+  color: $text-gray-color;
+  font-family: $bold-font;
+  font-size: 1.4286rem;
+  margin-bottom: 33px;
+  text-transform: uppercase;
+}
+
+.class-description__text { margin-bottom: 20px; }
+
+.class-description__yoga-type {color: $text-graysm-color;}

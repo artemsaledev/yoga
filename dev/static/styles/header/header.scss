@@ -13,7 +13,7 @@
 
 .main-nav { 
   margin: 0 10%;
-  padding: 0 10%;
+  padding: 0 11%;
 }
 
 .main-nav-active { 
@@ -51,13 +51,14 @@
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: 32px;
 }
 
 .nav-list__item {
   align-self: center;
   cursor: pointer;
-  margin: 0 1.0714rem; 
+  margin: 0 1.0714rem;
   a {
     color: $base-text-color;
     display: flex;
@@ -93,15 +94,28 @@
   }
 }
 
-.nav-list__item a:hover::after { transform: scale(.8); }
+.nav-list__item a:hover::after, .nav-list__item a:active::after, .nav-list__item a:focus::after { transform: scale(.8); }
 .nav-list__item--logo { 
-  margin: 0 13.5%;
+  margin: 0 auto;
   display: flex!important;
   a:after { display: none; }
 }
 
 .toggle-active {
-  text-shadow: 0 0 .9px #fff, 0 0 .9px #fff, 0 0 .9px #fff;
+  a {color: $main-active-color;}
+  order: -1;
+  a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    background-color: $main-active-color;
+    transform: scale(.8);
+    transition: all .2s;
+    }
 }
 
 .nav-trigger { // navigation trigger - visible only on small devices

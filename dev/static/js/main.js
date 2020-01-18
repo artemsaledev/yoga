@@ -30,11 +30,13 @@ $navButton.on("click", function() {
   $mainContent.toggleClass('main-content--nav-active');
 });
 
-$(".pagination-header a").on("click", function() {
+$navItem.on("click", function() {
+  $navItem.removeClass('toggle-active');
   $navButton.toggleClass('nav-trigger--nav-is-visible');
   $navModal.toggleClass('main-nav__modal--open');
   $navMenu.toggleClass('main-nav-active');
   $mainContent.toggleClass('main-content--nav-active');
+  $(this).addClass('toggle-active');
 });
 
 };

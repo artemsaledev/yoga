@@ -1,9 +1,24 @@
+@media screen and (min-device-width: 968px) {
+	.class-description-img {
+		width: 270px;
+	}
+}
+
+@media screen and (max-device-width: 1919px) {
+	.class-for {
+		flex: 1;
+	}
+}
+
 @media screen and (max-device-width: 1350px) {
 	.main-header { 
 		justify-content: space-between;
 	}
+	.main-nav {padding: 0;}
 	.nav-list {
 		padding-top: 16px;
+		justify-content: center;
+    	padding-right: 0px;
 	}
 	.nav-list__item {
 		padding-bottom: 6px;
@@ -14,8 +29,26 @@
 		left: 30px;
 		top: 16px;
 	}
-	.offer-text_catalog {
+	.offer-text__catalog {
 		padding: 0;
+	}
+}
+
+@media screen and (max-device-width: 968px) {
+	.group-class {
+	    justify-content: space-evenly;
+	}
+	.class-for {flex: 0 1 233px;}
+	.class-for--shadow-wrapper {
+		flex-direction: column;
+	}
+	.class-description-img {
+		border-top-right-radius: 8px;
+		border-top-left-radius: 8px;
+		img {transform: scale(1.075);}
+	}
+	.class-description {
+		padding: 50px 30px;
 	}
 }
 
@@ -26,6 +59,9 @@
 	.nav-list__item {
 		display: none;
 		margin: 0px;
+		&:last-child {
+	    margin-bottom: 20px;
+		}
 	}
 	.main-nav-active .nav-list__item--logo {
 		position: static;
@@ -37,12 +73,18 @@
 	.form-trial {
 		justify-content: center;
 	}
-	.offer-text_catalog {
+	.group-input-block {
+		margin-right: 0px;
+	}
+	.offer-text__catalog {
 		order: -1;
 		padding: 0 0 7rem;
 		justify-content: center;
 	}
-	.head-offer, .official-head { margin-left: 20px; }
+	.head-offer, .call-head { 
+	    margin: 0 auto;
+		text-align: center;
+	}
 	.head-offer {
 		font-size: 2.5rem;
 	    line-height: 4rem;
@@ -51,14 +93,19 @@
 		    top: 0px;
 		}
 	}
-
-	.official-head {
+	.call-head {
 		max-width: 77%;
 	    font-size: 2rem;
+	}
+	.class-for {
+		flex: 1;
 	}
 }
 
 @media screen and (max-device-width: 640px) {
+	.our-classes, .about-us, .benefit, .prices-testimonials, .footer-wrapper {
+		padding: 50px 11%;
+	}
 	.banner-form {
 		flex-direction: column;
 	    background-position-x: 875px;
@@ -67,14 +114,15 @@
 	.form-trial {
 		flex-direction: column;
 	}
-	.offer-text_catalog {
+	.offer-text__catalog {
 	    padding: 0 0 3rem;
 	}
-	.official-head {
+	.call-head {
 		font-size: 1.5rem;
 	}
 	.head-offer {
 		line-height: 3.25rem;
-	    margin-bottom: 20px;
+	    padding-bottom: 20px;
 	}
+	.section-overhead {margin: 20px 0 50px;}
 }
