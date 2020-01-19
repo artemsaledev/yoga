@@ -211,3 +211,67 @@ input.form_sub-btn {
 .class-description__text { margin-bottom: 20px; }
 
 .class-description__yoga-type {color: $text-graysm-color;}
+
+/////////////////////////section - gallery////////////////////////
+.gallery {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.gallery__photo {
+  align-items: center;
+  display: flex;
+  flex: 1 1 25%;
+  justify-content: center;
+  margin: -1px;
+  overflow: hidden;
+  position: relative;
+  &:after {
+    content: '';
+    box-sizing: border-box;
+    background: $main-active-bg;
+    display: none;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  &:hover::after {
+    display: flex;
+    transition: all 1s;
+  }
+  &:hover {
+    .zoom-photo {
+      visibility: visible;
+      right: 50%;
+      top: 50%;
+      transition: all 1s;
+    }
+    picture {
+      filter: grayscale(100%);
+      filter: gray;
+    }
+  }
+}
+
+.photo-galleries-img {
+  width: 100%;
+}
+
+.zoom-photo {
+  background: $button-bg-gallery;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 57px;
+  position: absolute;
+  margin: -23.5px;
+  padding: 16.5px;
+  visibility: hidden;
+  width: 57px;
+  z-index: 99;
+  &::active,&::focus {
+    outline: none;
+  }
+}
