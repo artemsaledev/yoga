@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.our-classes, .about-us, .benefit, .prices-testimonials, .footer-wrapper {
+.our-classes, .about-us, .prices-testimonials, .footer-wrapper {
   margin: 0 10%;
   padding: 100px 11%;
 } 
@@ -305,6 +305,7 @@ input.form_sub-btn {
   align-items: center;
   flex: 0 1 570px;
   max-width: 570px;
+  margin-left: -23px;
   position: relative;
   width: 48%;
 }
@@ -376,4 +377,71 @@ input.form_sub-btn {
 .slick-slider {
   max-width: 100%!important;
   border-radius: 8px;
+}
+
+//////////////////////////////////section - benefits/////////////////////
+.benefit {
+  background: url(../images/bg-features.png) center repeat;
+  background-size: cover;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px 21%;
+  &:after {
+    content: '';
+    display: flex;
+    flex: 1 0 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: $main-active-bg;
+    opacity: 0.6;
+  }
+}
+
+.benefit-groups {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -45px;
+  z-index: 99;
+}
+
+.benefit-description {
+  display: flex;
+  flex: 0 1 270px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 15px 50px;
+  img {
+    margin: 0 auto;
+    height: 70px;
+    width: 70px;
+  }
+  &__text {
+    span {
+      color: $text-white-color;
+      display: inline-block;
+      font-size: 16px;
+      padding: 0 16px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+span.benefit-description__head {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  font-family: $bold-font;
+  font-weight: bold;
+  font-size: 18px;
+  justify-content: center;
+  margin: 25px 0 15px;
+  min-height: 60px;
+  padding: 0 55px;
+  text-transform: uppercase;
 }
