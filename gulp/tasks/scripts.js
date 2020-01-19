@@ -8,14 +8,16 @@ let uglify = require('gulp-uglify'),
 module.exports = function () {
     $.gulp.task('libsJS:dev', () => {
         return $.gulp.src([
-            'dev/static/js/jquery.custom-scroll.min.js'])
+            'dev/static/js/jquery.custom-scroll.min.js',
+            'node_modules/slick-carousel/slick/slick.min.js'])
             .pipe(concat('libs.min.js'))
             .pipe($.gulp.dest(scriptsPATH.ouput));
     });
 
     $.gulp.task('libsJS:build', () => {
         return $.gulp.src([
-            'dev/static/js/jquery.custom-scroll.min.js'])
+            'dev/static/js/jquery.custom-scroll.min.js',
+            'node_modules/slick-carousel/slick/slick.min.js'])
             .pipe(concat('libs.min.js'))
             .pipe(uglify())
             .pipe($.gulp.dest(scriptsPATH.ouput))
