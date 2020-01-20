@@ -12,7 +12,7 @@ body {
   background-color: $main-bg-color;
   font-family: $main-font;
   color: $base-text-color; 
-  overflow: scroll!important;
+  overflow-x: hidden;
   margin: 0; 
   display: flex;
   flex: 1 0 100%;

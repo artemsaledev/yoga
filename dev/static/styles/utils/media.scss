@@ -10,6 +10,12 @@
 	}
 }
 
+@media screen and (max-device-width: 1650px) {
+	.subscription-rate {
+		width: 240px;
+	}
+}
+
 @media screen and (max-device-width: 1350px) {
 	.main-header { 
 		justify-content: space-between;
@@ -47,6 +53,20 @@
 		flex: 1;
 		margin-left: 0px;
 		width: 570px;
+	}
+	.subscription-plan {
+		flex-direction: column;
+	}
+	.subscription-rate {
+		flex: 1 0 100%;
+	    margin-bottom: 50px;
+	    width: auto;
+	}
+	.subscription-rates__time {
+		p {
+	    justify-content: center;
+	    text-align: center;
+	  }
 	}
 }
 
@@ -148,7 +168,7 @@
 }
 
 @media screen and (max-device-width: 640px) {
-	.our-classes, .about-us, .benefit, .prices-testimonials, .footer-wrapper {
+	.our-classes, .about-us, .benefit, .prices-testimonials--wrapper, .footer-wrapper {
 		padding: 50px 11%;
 	}
 	.banner-form {
@@ -183,12 +203,14 @@
 	    width: 28px;
 	}
 	.benefit {background-position-x: -3150px;}
+	.prices-testimonials--wrapper {margin: 0;}
 }
 
 @media screen and (max-device-width: 481px) {
 	.about-us__slider {
 		width: 355px;
 	}
+	.popular-categories__photo img {height: 200px;}
 }
 
 @media screen and (max-device-width: 377px) {

@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.our-classes, .about-us, .prices-testimonials, .footer-wrapper {
+.our-classes, .about-us, .footer-wrapper {
   margin: 0 10%;
   padding: 100px 11%;
 } 
@@ -424,7 +424,7 @@ input.form_sub-btn {
     span {
       color: $text-white-color;
       display: inline-block;
-      font-size: 16px;
+      font-size: 1.1429rem;
       padding: 0 16px;
       text-align: center;
       width: 100%;
@@ -438,7 +438,7 @@ span.benefit-description__head {
   flex: 1;
   font-family: $bold-font;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.2857rem;
   justify-content: center;
   margin: 25px 0 15px;
   min-height: 60px;
@@ -446,4 +446,110 @@ span.benefit-description__head {
   text-transform: uppercase;
 }
 
-///////////////////////////////////////////////////////////////////
+/////////////////////////////////section prices-testimonials//////////////////////////////////
+
+.prices-testimonials {
+  background: url(../images/bg-prices.png) center repeat;
+  background-size: cover;
+  flex-wrap: wrap;
+}
+
+.prices-testimonials--wrapper {
+  margin: 0 10%;
+  padding: 100px 11%;
+  width: 100%;
+}
+
+.subscription-plan {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 0 -15px;
+}
+
+.testimonials-slider {
+  display: flex;
+}
+
+.subscription-rate {
+  align-items: center;
+  background: $main-bg-color;
+  border-radius: 8px;
+  box-shadow: 6px 6px 50px rgba(0, 0, 0, .1);
+  display: flex;
+  flex: 1 1 370px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 15px;
+  overflow: hidden;
+}
+
+.subscription-rate--line {
+  background: $rate-line-color;
+  border-width: 0px;
+  height: 1px;
+  margin: 22.5px auto;
+  width: 100px;
+}
+
+.subscription-rates__price {
+  align-items: center;
+  background: $main-active-bg;
+  color: $text-white-color;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 100%;
+  font-family: $bold-font;
+  justify-content: center;
+  padding: 2.55rem 1rem;
+  text-transform: uppercase;
+  text-align: center;
+    span:first-child {
+      font-size: 2.2857rem;
+      margin-right: 15px;
+    }
+    span:nth-child(2) {
+      font-size: 4.8571rem;
+      margin-right: 9px;
+    }
+    span:last-child {
+      align-self: flex-end;
+      font-size: 1.2857rem;
+      padding-bottom: 10px;
+    }
+}
+
+.subscription-rates__time {
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 4rem;
+  p {
+    display: flex;
+    flex: 1 1 100%;
+    flex-wrap: nowrap;
+    font-size: 1.2857rem;
+    margin: 0 -1px;
+  }
+}
+
+button.subscription-btn {
+  background-color: $main-active-color;
+  border: 1px solid transparent;
+  border-width: 0;
+  border-radius: 8px;
+  color: $text-white-color;
+  cursor: pointer;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 1em;
+  margin: 50px auto 0;
+  padding: 17px 11px;
+  width: 170px;
+  &:hover {
+    background-color: $button-hover-color;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .15);
+    transition: all .25s;
+  }
+}
