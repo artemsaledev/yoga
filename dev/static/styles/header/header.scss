@@ -40,7 +40,7 @@
     visibility: hidden;
     opacity: 0; 
     transition: all 0.25s ease-in-out;
-    background-color: rgba(213, 211, 211, 0.3);
+    background-color: $main-bg-color;
 }
 
 .main-nav__modal--open {
