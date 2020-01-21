@@ -100,7 +100,11 @@ input.form_sub-btn {
   background-color: $main-active-color;
   color: $text-white-color;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
+  font-family: $medium-font;
+  font-size: 1.3em;
+  margin-top: 23px;
+  margin-bottom: 0px; 
   margin-left: auto;
   width: 170px;
   &:hover {
@@ -321,7 +325,7 @@ input.form_sub-btn {
   }
 }
 
-.slider-nav--next, .slider-nav--prev {
+.slider-nav--next, .slider-nav--prev, .rec-slider--next, .rec-slider--prev {
   background: $button-bg-gallery;
   border-radius: 50%;
   color: $icon-color;
@@ -352,31 +356,26 @@ input.form_sub-btn {
   &:after {transform: rotate(-45deg);}
 }
 
-.slider-nav--next {
+.slider-nav--next, .rec-slider--next {
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
   right: -25px;
   &:before, &:after {
   right: 18px
   }
   &:before {
-    margin-top: -.63em;
+    margin-top: -.65em;
   }
 }
 
-.slider-nav--prev {
+.slider-nav--prev, .rec-slider--prev {
   box-shadow: 20px 5px 20px 0px rgba(0, 0, 0, 0.1);
   left: -25px;
   &:before, &:after {
   left: 18px
   }
   &:after {
-    margin-top: -.63em;
+    margin-top: -.65em;
   }
-}
-
-.slick-slider {
-  max-width: 100%!important;
-  border-radius: 8px;
 }
 
 //////////////////////////////////section - benefits/////////////////////
@@ -455,8 +454,7 @@ span.benefit-description__head {
 }
 
 .prices-testimonials--wrapper {
-  margin: 0 10%;
-  padding: 100px 11%;
+  padding: 100px 0;
   width: 100%;
 }
 
@@ -464,11 +462,7 @@ span.benefit-description__head {
   display: flex;
   flex: 1;
   justify-content: center;
-  margin: 0 -15px;
-}
-
-.testimonials-slider {
-  display: flex;
+  margin: 0 20%;
 }
 
 .subscription-rate {
@@ -484,12 +478,23 @@ span.benefit-description__head {
   overflow: hidden;
 }
 
-.subscription-rate--line {
+.trainer-advice--line, .subscription-rate--line {
   background: $rate-line-color;
   border-width: 0px;
   height: 1px;
-  margin: 22.5px auto;
+}
+
+.subscription-rate--line {
+  margin: 22.5px auto; 
   width: 100px;
+}
+
+.trainer-advice--line {
+  bottom: -5%;
+  height: 75px;
+  left: 0px;
+  position: absolute;
+  width: 2px;
 }
 
 .subscription-rates__price {
@@ -526,6 +531,7 @@ span.benefit-description__head {
   justify-content: center;
   padding: 50px 4rem;
   p {
+    color: $base-text-color;
     display: flex;
     flex: 1 1 100%;
     flex-wrap: nowrap;
@@ -541,9 +547,9 @@ button.subscription-btn {
   border-radius: 8px;
   color: $text-white-color;
   cursor: pointer;
-  font-family: $main-font;
-  font-weight: 700;
-  font-size: 1em;
+  font-family: $medium-font;
+  font-weight: 500;
+  font-size: 1.3em;
   margin: 50px auto 0;
   padding: 17px 11px;
   width: 170px;
@@ -551,5 +557,159 @@ button.subscription-btn {
     background-color: $button-hover-color;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .15);
     transition: all .25s;
+  }
+}
+
+.testimonials-slider {
+  background-color: $main-bg-color;
+  border-radius: 8px;
+  box-shadow: 6px 6px 50px rgba(0, 0, 0, .1);
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 100px auto 0;
+  max-width: 1170px;
+  width: 100%;
+}
+
+.trainer-recommendation {
+  display: flex;
+  padding: 33px 0 75px;
+  width: 100%;
+  &__prev {
+    display: flex;
+  }
+  :focus {
+    outline: transparent;
+  }
+}
+
+.trainer-photo-big {
+  flex: 0 0 255px;
+  text-align: center;
+  img {
+    border: 2px solid $rate-line-color;
+    border-radius: 50%;
+    min-height: 125px;
+    padding: 10px;
+    margin: 0 auto;
+    min-width: 125px;
+  }
+}
+
+.trainer-advice {
+  padding: 10px 40px 0;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  position: relative;
+  &__position {
+    color: $text-gray-color;
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
+  &__name {
+    color: $username-text-color;
+    font-family: $bold-font;
+    font-size: 1.1429rem;
+    width: 100%;
+  }
+  p {
+    width: 100%;
+    vertical-align: bottom;
+  }
+  blockquote {
+    font-family: $testimonial-font;
+    font-style: italic;
+    margin: 0;
+    max-width: 670px;
+    position: relative;
+    &:after, &:before {
+      color: #5b6ceb;
+      font-size: 60px;
+      position: absolute;
+      font-style: normal;
+    }
+    &:before {
+      content: '\201C';
+      top: -12px;
+      left: -52px;
+    }
+    &:after {
+      content: '\201D';
+      right: -10px;
+      bottom: -48px;
+    }
+  }
+}
+
+.next-advice {
+  align-items: center;
+  bottom: -40px;
+  display: flex;
+  justify-content: center;
+  left: 320px;
+  position: absolute;
+  width: 220px;
+  z-index: 99;
+  &__ {display: flex;}
+  :focus {
+    outline: transparent;
+  }
+}
+
+.next-advice-prev {
+  align-items: center;
+  display: flex;
+  width: 170px;
+}
+
+.trainer-photo {
+  max-width: 70px;
+  margin-left: 30px;
+  img {
+    border: 2px solid $rate-line-color;
+    border-radius: 50%;
+    min-height: 70px;
+    padding: 2px;
+    margin: 0 auto;
+    min-width: 70px;
+  }
+}
+
+.trainer-preview {
+  &__name {
+    font-family: $bold-font;
+    font-size: 1rem;
+  }
+  &__position {font-size: 0.8571rem;}
+}
+
+.trainer-personal {
+  margin-left: 15px;
+  p {
+    width: 100%;
+  }
+}
+
+.slider-nav--sm {
+  height: 25px;
+  width: 25px;
+  &:after, &:before {
+    top: 57%;
+  }
+}
+
+.rec-slider--prev.slider-nav--sm {
+  left: -33px;
+  &:after, &:before {
+    left: 10px;
+  }
+}
+
+.rec-slider--next.slider-nav--sm {
+  right: -33px;
+  &:after, &:before {
+    right: 10px;
   }
 }

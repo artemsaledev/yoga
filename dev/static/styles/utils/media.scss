@@ -14,6 +14,13 @@
 	.subscription-rate {
 		width: 240px;
 	}
+	.subscription-rates__time {
+		p {
+			text-align: center;
+    		padding: 0 20px;
+    	}
+	}
+	.testimonials-slider {max-width: 780px;}
 }
 
 @media screen and (max-device-width: 1350px) {
@@ -88,6 +95,7 @@
 	}
 	.benefit {background-position-x: -1650px;}
 	.about-us__description { padding-right: 25%; }
+	.testimonials-slider {max-width: 640px;}
 	.footer__about-us {padding-right: 0px;}
 }
  
@@ -139,6 +147,21 @@
 	.class-for {
 		flex: 1;
 	}
+	.testimonials-slider {max-width: 480px;}
+	.trainer-recommendation__prev {
+		flex-direction: column;
+	    justify-content: center;
+	}
+	.trainer-photo-big {
+		flex: 0;
+	    margin: 0 auto;
+	}
+	.trainer-advice {padding: 40px 80px 0;}
+	.trainer-advice--line {
+	    left: 45px;
+	    bottom: -10%;
+	}
+	.next-advice {left: 120px;}
 	.footer-wrapper {
 		flex-wrap: wrap;
 	}
@@ -211,11 +234,38 @@
 		width: 355px;
 	}
 	.popular-categories__photo img {height: 200px;}
+	.trainer-advice {
+	    padding: 40px 35px 40px;
+	}
+	.trainer-advice--line {
+	    bottom: 33px;
+	    height: 40px;
+	    left: 25px;
+	}
+	.trainer-advice blockquote:before {
+		top: -30px;
+	    left: -30px;
+	}
+	.next-advice {
+		left: 15%;
+	    width: 172px;
+	    bottom: -30px;
+	}
+	.next-advice-prev {flex-direction: column;}
+	.trainer-photo {margin: 0 auto;}
+	.trainer-personal {
+		margin-top: 5px;
+		margin-left: 0px;
+		text-align: center;
+	}
 }
 
 @media screen and (max-device-width: 377px) {
 	.about-us__slider {
 		width: 266px;
+	}
+	.subscription-plan {
+		margin: 0;
 	}
 }
 

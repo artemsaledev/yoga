@@ -81,4 +81,78 @@ img {max-width: 100%; min-height: 100%; min-width: 100%;}
 
 *, *:before, *:after { box-sizing: border-box; }
 
+.slick-slider, .slick-list  {
+  max-width: 100%!important;
+}
+
+.slick-slide {
+    display: flex!important;
+}
+
+.my-dots {
+  bottom: 35%;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  right: -102%;
+  text-align: center;
+  width: 100%;
+}
+
+.my-dots li {
+  cursor: pointer;
+  height: 20px;
+  margin: 0 5px 15px;
+  padding: 0;
+  position: relative;
+  width: 20px;
+}
+
+.my-dots li button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: transparent;
+  display: block;
+  font-size: 0;
+  height: 20px;
+  line-height: 0;
+  outline: none;
+  padding: 5px;
+  width: 20px;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  color: black;
+  content: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg');
+  font-family: 'slick';
+  font-size: 6px;
+  height: 20px;
+  line-height: 20px;
+  left: 0;
+  opacity: .25;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   
+}
+
+.my-dots li.slick-active button:before {
+  color: black;
+  opacity: .75;
+}
+
 ///////////////////////////////////////////
