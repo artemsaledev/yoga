@@ -21,6 +21,7 @@
     	}
 	}
 	.testimonials-slider {max-width: 780px;}
+	.slick-slide img {max-height: 263px!important;}
 }
 
 @media screen and (max-device-width: 1350px) {
@@ -75,6 +76,7 @@
 	    text-align: center;
 	  }
 	}
+	.slick-slide img {max-height: 300px!important;}
 }
 
 @media screen and (max-device-width: 968px) {

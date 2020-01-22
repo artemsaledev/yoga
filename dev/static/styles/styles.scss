@@ -111,6 +111,7 @@ img {max-width: 100%; min-height: 100%; min-width: 100%;}
 .my-dots li button {
   background: transparent;
   border: 0;
+  border-radius: 50%;
   cursor: pointer;
   color: transparent;
   display: block;
@@ -125,6 +126,8 @@ img {max-width: 100%; min-height: 100%; min-width: 100%;}
 .my-dots li button:hover,
 .my-dots li button:focus {
   outline: none;
+  background: #5b6ceb;
+  border: 5px solid #e3e6ff;
 }
 
 .my-dots li button:hover:before,
@@ -133,8 +136,9 @@ img {max-width: 100%; min-height: 100%; min-width: 100%;}
 }
 
 .my-dots li button:before {
-  color: black;
-  content: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg');
+  color: #5b6ceb;
+  content: url('../images/circle-open.svg');
+  fill: #dbdcdd!important;
   font-family: 'slick';
   font-size: 6px;
   height: 20px;
@@ -150,9 +154,29 @@ img {max-width: 100%; min-height: 100%; min-width: 100%;}
    
 }
 
+.my-dots li.slick-active button {
+  background: #5b6ceb;
+  border: 5px solid #e3e6ff;
+}
+
 .my-dots li.slick-active button:before {
-  color: black;
+  color: #5b6ceb;
   opacity: .75;
 }
 
-///////////////////////////////////////////
+.fancybox-inner > .gallery__photo {
+  &:hover {
+    .zoom-photo {display: none!important;}
+    &:after {display: none!important;}
+    picture { filter: none;}
+  }
+}
+
+.input_error {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.messages {
+  padding: 15px 0 0;
+}

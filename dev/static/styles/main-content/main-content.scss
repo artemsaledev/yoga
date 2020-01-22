@@ -55,10 +55,6 @@ input:hover, input:active, input:focus {color:#000;}
   margin-bottom: 31px;
 }
 
-.choose-trial-class__list {
-  display: none;
-}
-
 .group-input-block {
   background-color: $form-bg-color;
   border-radius: 20px;
@@ -98,7 +94,7 @@ input:hover, input:active, input:focus {color:#000;}
 
 input.form_sub-btn {
   background-color: $main-active-color;
-  color: $text-white-color;
+  color: $button-text-color;
   cursor: pointer;
   font-weight: 500;
   font-family: $medium-font;
@@ -323,6 +319,9 @@ input.form_sub-btn {
     width: 570px;
     height: 300px;
   }
+  &:active, &:focus {
+    outline: transparent;
+  }
 }
 
 .slider-nav--next, .slider-nav--prev, .rec-slider--next, .rec-slider--prev {
@@ -476,6 +475,12 @@ span.benefit-description__head {
   justify-content: center;
   margin: 0 15px;
   overflow: hidden;
+  &:hover {
+    button, .subscription-rates__price {
+    background-color: #001dff;
+    box-shadow: 0px 0px 15px 5px rgb(166, 176, 255);
+    }
+  }
 }
 
 .trainer-advice--line, .subscription-rate--line {
@@ -545,7 +550,7 @@ button.subscription-btn {
   border: 1px solid transparent;
   border-width: 0;
   border-radius: 8px;
-  color: $text-white-color;
+  color: $button-text-color;
   cursor: pointer;
   font-family: $medium-font;
   font-weight: 500;
@@ -689,6 +694,7 @@ button.subscription-btn {
   margin-left: 15px;
   p {
     width: 100%;
+    &:first-child {margin-bottom: 5px;}
   }
 }
 

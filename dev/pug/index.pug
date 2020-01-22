@@ -4,19 +4,21 @@ block variables
 	- var title = 'Yoga best practice'
 
 block banner-form
-	section.banner-form
-		form(action="form.php").form-trial
+	section(id="reservation").banner-form
+		
+		form(action="" id="form").form-trial.validate
 			.group-input-block
 				span.form-trial__head Trial Class
-				input(type="text" name="name" placeholder="Enter your name" required)
-				input(type="phone" name="phone" placeholder="Enter your phone" required)
-				input(type="text" name="class" placeholder="Choose your class" required).choose-trial-class
-				ul.choose-trial-class__list
-					li.class-yoga-for Yoga for health
-					li.class-yoga-for Yoga for lose weight
-					li.class-yoga-for Yoga for elderly
-					li.class-yoga-for Yoga for children
-				input(name="sub" type="submit" value="Try it").form_sub-btn
+				input(type="text" id="user_name" placeholder="Enter your name" name="name" value="" required)
+				input(type="phone" id="user_phone" placeholder="Enter your phone" name="phone" value="" required)
+				select(id="text_comment" name="message" value="" required).choose-trial-class__list.styler Choose your class
+					option(value="Choose your class") Choose your class
+					option(value="Yoga for health") Yoga for health
+					option(value="Yoga for lose weight") Yoga for lose weight
+					option(value="Yoga for elderly") Yoga for elderly
+					option(value="Yoga for children") Yoga for children
+				input(type="submit" value="Try it").form_sub-btn
+				.messages
 		.offer-text__catalog
 			h1.head-offer 
 				span J
@@ -26,13 +28,13 @@ block banner-form
 			p.call-head Create the healthy living for yourself
 
 block our-classes
-	section.our-classes
+	section(id="elements").our-classes
 		h2.head YOGA FEATURE PROGRAM
 		p.section-overhead Our Classes
 		.group-class
 			.class-for
 				.class-for--shadow-wrapper
-					a(href="#").class-description-img
+					a.class-description-img
 						img(src="static/images/our-classes/yoga-for-health.png" alt="Yoga for health")
 					p.class-description
 						span.class-description__head Yoga For Health
@@ -40,7 +42,7 @@ block our-classes
 						span.class-description__yoga-type Ashtanga - Hatha
 			.class-for
 				.class-for--shadow-wrapper
-					a(href="#").class-description-img
+					a.class-description-img
 						img(src="static/images/our-classes/yoga-for-lose-weight.png" alt="Yoga for lose weight")
 					p.class-description
 						span.class-description__head Yoga for lose weight
@@ -48,7 +50,7 @@ block our-classes
 						span.class-description__yoga-type Ashtanga - Hatha
 			.class-for
 				.class-for--shadow-wrapper
-					a(href="#").class-description-img
+					a.class-description-img
 						img(src="static/images/our-classes/yoga-for-children.png" alt="Yoga for children")
 					p.class-description
 						span.class-description__head Yoga for children
@@ -56,7 +58,7 @@ block our-classes
 						span.class-description__yoga-type Ashtanga - Hatha
 			.class-for
 				.class-for--shadow-wrapper
-					a(href="#").class-description-img
+					a.class-description-img
 						img(src="static/images/our-classes/yoga-for-elderly.png" alt="Yoga for elderly")
 					p.class-description
 						span.class-description__head Yoga for elderly
@@ -64,58 +66,58 @@ block our-classes
 						span.class-description__yoga-type Ashtanga - Hatha
 
 block gallery
-	section.gallery
+	section(id="gallery").gallery
 		.gallery__photo
-			a(href="#").photo-galleries-img
+			a(href="static/images/gallery/slide-1.png" rel="gallery1").photo-galleries-img.fancybox
 				picture
 					source(srcset="static/images/gallery/slide-1.png" media="(max-width: 1023px)")
 					img(src="static/images/gallery/slide-1.png" alt="slide-1")
 			button.zoom-photo
 				img(src="static/images/loop-search.png" alt="see more")
 		.gallery__photo
-			a(href="#").photo-galleries-img
+			a(href="static/images/gallery/slide-2.png" rel="gallery1").photo-galleries-img.fancybox
 				picture
 					source(srcset="static/images/gallery/slide-2.png" media="(max-width: 1023px)")
 					img(src="static/images/gallery/slide-2.png" alt="slide-2")
 			button.zoom-photo
 				img(src="static/images/loop-search.png" alt="see more")
 		.gallery__photo
-			a(href="#").photo-galleries-img
+			a(href="static/images/gallery/slide-3.png" rel="gallery1").photo-galleries-img.fancybox
 				picture
 					source(srcset="static/images/gallery/slide-3.png" media="(max-width: 1023px)")
 					img(src="static/images/gallery/slide-3.png" alt="slide-3")
 			button.zoom-photo
 				img(src="static/images/loop-search.png" alt="see more")
 		.gallery__photo
-			a(href="#").photo-galleries-img
+			a(href="static/images/gallery/slide-4.png" rel="gallery1").photo-galleries-img.fancybox
 				picture
 					source(srcset="static/images/gallery/slide-4.png" media="(max-width: 1023px)")
 					img(src="static/images/gallery/slide-4.png" alt="slide-4")
 			button.zoom-photo
 				img(src="static/images/loop-search.png" alt="see more")
 		.gallery__photo
-			a(href="#").photo-galleries-img
+			a(href="static/images/gallery/slide-5.png" rel="gallery1").photo-galleries-img.fancybox
 				picture
 					source(srcset="static/images/gallery/slide-5.png" media="(max-width: 1023px)")
 					img(src="static/images/gallery/slide-5.png" alt="slide-5")
 			button.zoom-photo
 				img(src="static/images/loop-search.png" alt="see more")
 		.gallery__photo
-			a(href="#").photo-galleries-img
+			a(href="static/images/gallery/slide-6.png" rel="gallery1").photo-galleries-img.fancybox
 				picture
 					source(srcset="static/images/gallery/slide-6.png" media="(max-width: 1023px)")
 					img(src="static/images/gallery/slide-6.png" alt="slide-6")
 			button.zoom-photo
 				img(src="static/images/loop-search.png" alt="see more")
 		.gallery__photo
-			a(href="#").photo-galleries-img
+			a(href="static/images/gallery/slide-7.png" rel="gallery1").photo-galleries-img.fancybox
 				picture
 					source(srcset="static/images/gallery/slide-7.png" media="(max-width: 1023px)")
 					img(src="static/images/gallery/slide-7.png" alt="slide-7")
 			button.zoom-photo
 				img(src="static/images/loop-search.png" alt="see more")
 		.gallery__photo
-			a(href="#").photo-galleries-img
+			a(href="static/images/gallery/slide-8.png" rel="gallery1").photo-galleries-img.fancybox
 				picture
 					source(srcset="static/images/gallery/slide-8.png" media="(max-width: 1023px)")
 					img(src="static/images/gallery/slide-8.png" alt="slide-8")
@@ -124,7 +126,7 @@ block gallery
 
 
 block about-us
-	section.about-us
+	section(id="about-us").about-us
 		.about-us__description
 			.about-us__text
 				h2.head About us
@@ -194,7 +196,7 @@ block benefit
 
 
 block prices-testimonials
-	section.prices-testimonials
+	section(id="shop").prices-testimonials
 		.prices-testimonials--wrapper
 			.subscription-plan
 				.subscription-rate
@@ -208,7 +210,7 @@ block prices-testimonials
 						p ENTRY TIME: 8A.M – 8P.M
 						hr.subscription-rate--line
 						p NUTRITION ADVICER: NO
-						button.subscription-btn Buy now
+						button(href="#reservation").subscription-btn.scroll-to Buy now
 				.subscription-rate
 					.subscription-rates__price
 						span $
@@ -220,7 +222,7 @@ block prices-testimonials
 						p ENTRY TIME: 8A.M – 8P.M
 						hr.subscription-rate--line
 						p NUTRITION ADVICER: YES
-						button.subscription-btn Buy now
+						button(href="#reservation").subscription-btn.scroll-to Buy now
 				.subscription-rate
 					.subscription-rates__price
 						span $
@@ -232,8 +234,8 @@ block prices-testimonials
 						p ENTRY TIME: 8A.M – 8P.M
 						hr.subscription-rate--line
 						p NUTRITION ADVICER: YES
-						button.subscription-btn Buy now
-			.testimonials-slider
+						button(href="#reservation").subscription-btn.scroll-to Buy now
+			.testimonials-slider(id="blog")
 				.trainer-recommendation.js-recommendation-prev
 					.trainer-recommendation__prev
 						.trainer-photo-big
