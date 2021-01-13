@@ -32,7 +32,7 @@
     "imagemin-pngquant": "^6.0.0"
   },
   "dependencies": {
-    "jquery-validation": "^1.19.0",
+    "jquery-validation": "^1.19.3",
     "normalize.css": "^8.0.0",
     "slick-carousel": "^1.8.1",
     "svg4everybody": "^2.1.9"
